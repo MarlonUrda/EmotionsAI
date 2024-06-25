@@ -92,9 +92,9 @@ while True:
 		# Se agrega la probabilidad en el label de la imagen
 		label = "{}: {:.0f}%".format(classes[np.argmax(pred)], max(Enojado,disgustado,Miedo,Feliz,Neutral,Triste,Sorprendido) * 100)
 
-		cv2.rectangle(frame, (Xi, Yi-40), (Xf, Yi), (255,0,0), -1)
-		cv2.putText(frame, label, (Xi+5, Yi-15),cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0,255,0), 2)
-		cv2.rectangle(frame, (Xi, Yi), (Xf, Yf), (255,0,0), 3)
+		cv2.rectangle(frame, (Xi, Yi-40), (Xf, Yi), (0,0,255), -1)
+		cv2.putText(frame, label, (Xi+5, Yi-15),cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255,255,255), 2)
+		cv2.rectangle(frame, (Xi, Yi), (Xf, Yf), (0,0,255), 3)
 
 
 	time_actualframe = time.time()
